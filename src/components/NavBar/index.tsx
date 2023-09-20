@@ -22,6 +22,11 @@ const navUrl = [
     slug: "contacts",
     url: "/contacts",
   },
+  {
+    title: "Sign Out",
+    slug: "sign-out",
+    url: "/sign-out",
+  },
 ];
 
 const NavBar = () => {

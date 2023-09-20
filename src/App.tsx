@@ -7,6 +7,9 @@ import AddProduct from "./pages/products/addProduct";
 import NavBar from "./components/NavBar";
 import About from "./pages/about-us";
 import Contacts from "./pages/contacts/contacts";
+import SignOut from "./pages/sign-out";
+import Banner from "./components/Banner";
+import Home from "./pages/home";
 
 // Dummy compotent
 // const Test = () => {
@@ -18,13 +21,12 @@ const App = () => {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" />
+        <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/sign-out" element={<SignOut />} />
       </Routes>
-
-      <h1>Hello world!</h1>
     </div>
   );
 };
